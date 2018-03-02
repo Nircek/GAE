@@ -32,6 +32,7 @@ class MainPage(webapp2.RequestHandler):
         def ie(x):
             return self.ie(x)
         #-#-#-#-#
+        w('Hello world!')
         
 app = webapp2.WSGIApplication([
     ('/', MainPage),
