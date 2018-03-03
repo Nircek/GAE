@@ -1,0 +1,1 @@
+cat ../write.key.pub
