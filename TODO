@@ -1,0 +1,2 @@
+naprawić problem z eval $(ssh-agent -s)
+naprawić tabulatory w enable.sh
