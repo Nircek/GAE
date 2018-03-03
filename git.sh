@@ -26,7 +26,10 @@
 
 eval $(ssh-agent -s)
 ssh-add -D
-ssh-add ../rsa.key
-git status
-read -n1 -r -p "Print diffrences?" k
-git diff
+if [ "$1" != "w" ]
+then
+    ssh-add ../rsa.key
+else
+    ssh-add ../write.key
+fi
+bash

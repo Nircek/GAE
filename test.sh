@@ -1,3 +1,4 @@
+#!/bin/bash
 # file from https://github.com/Nircek/GAE
 # licensed under MIT license
 
@@ -23,6 +24,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+eval $(ssh-agent -s)
 ssh-add -D
 ssh-add ../rsa.key
 git pull
