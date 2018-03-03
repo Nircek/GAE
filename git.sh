@@ -26,7 +26,8 @@
 
 eval $(ssh-agent -s)
 ssh-add -D
-if [ "$1" != "w" ] then
+if [ "$1" != "w" ]
+then
     ssh-add ../rsa.key
 else
     ssh-add ../write.key
