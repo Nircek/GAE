@@ -1,3 +1,4 @@
+#!/bin/bash
 # file from https://github.com/Nircek/GAE
 # licensed under MIT license
 
