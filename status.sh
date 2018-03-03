@@ -24,7 +24,9 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+eval $(ssh-agent -s)
 ssh-add -D
 ssh-add ../rsa.key
 git status
+read -n1 -r -p "Print diffrences?" k
 git diff
